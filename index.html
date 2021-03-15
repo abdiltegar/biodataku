@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title></title>
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <style>
+            body{
+                /* background-image: linear-gradient(to bottom right, #c997ff, #c997ff, #AC5CFF); */
+                background-image: linear-gradient(to bottom right, #e4e4e4, #f5f5f5, #d8d8d8);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family: sans-serif;
+            }
+            .container{
+                width:100%;
+                padding: 60px 0px;
+            }
+            .box-foto{
+                width: 301px;
+                height: 885px;
+                background-color: #fff;
+                text-align: left;
+                border-radius: 2px;
+                box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+                z-index: 2;
+                float: right;
+                /* padding: 40px 0px 40px 40px; */
+            }
+            .nametag{
+                position: relative;
+                z-index: 3;
+                background-color: #fff;
+                box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+                margin-top: -35px;
+                margin-right: 5px;
+                float: right;
+                padding: 5px 10px;
+            }
+            .box{
+                width: 800px;
+                height: 300px;
+                background-color: #fff;
+                color: rgb(26, 26, 26);
+                text-align: left;
+                border-radius: 2px;
+                box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+                z-index: 2;
+                /* padding: 40px 0px 40px 40px; */
+            }
+
+            .table-box{
+                width: 100%;
+            }
+            .foto-profil{
+                width: 301px;
+                height: 301px;
+                z-index: 1;
+                border-top-left-radius: 2px;
+                border-top-right-radius: 2px;
+            }
+            .inner-box{
+
+            }
+            hr{
+                border: 0;
+                border-top: 1px solid rgba(0,0,0,.1);
+                box-sizing: content-box;
+                height: 0;
+                overflow: visible;
+            }
+            .icon{
+                width: 20px;
+                height: 20px;
+            }
+            ul{
+                list-style: none;
+                margin-left: -30px;
+            }
+            li{
+                padding: 7px 10px;
+            }
+            .table-list-contain tbody tr td {
+                padding: 8px 8px;
+            }
+            #map {
+                height: 250px;
+                /* The height is 400 pixels */
+                width: 100%;
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+                /* The width is the width of the web page */
+            }
+
+            .container-bar{
+                width: 100%;
+                height: 20px;
+                border-radius: 8px;
+                background-color: #efefef;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                margin:4px 0px;
+            }
+            .bar{
+                height: 21px;
+                border-radius: 8px;
+                background-image: linear-gradient(to bottom right, #c997ff, #c997ff, #AC5CFF);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                text-align: center;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <table class="table-box">
+                    <tr>
+                        <td style="width:34%; text-align: right;padding-right: 10px;">
+                            <div class="box-foto">
+                                <img src="img/tegar2.jpg" class="foto-profil" alt="">
+                                <span class="nametag">Abdil Tegar Arifin</span>
+                                <div style="padding:10px 10px;">
+                                    <ul>
+                                        <li><img src="img/home.png" class="icon"> Jember, East Java, Indonesia</li>
+                                        <li><img src="img/message.png" class="icon"> abdiltegar12@gmail.com</li>
+                                        <li><img src="img/phone-call.png" class="icon"> +62 8132 6711 411</li>
+                                    </ul>
+                                    <hr>
+                                    <table class="table-box table-list-contain">
+                                        <tbody>
+                                            <tr>
+                                                <td width="20px"><img src="img/international.png" class="icon"></td>
+                                                <td valign="center"> Languages</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    Bahasa Indonesia <br>
+                                                    <div class="container-bar">
+                                                        <div class="bar" style="width:95%">95%</div>
+                                                    </div>
+                                                    English <br>
+                                                    <div class="container-bar">
+                                                        <div class="bar" style="width:70%">70%</div>
+                                                    </div>
+                                                    Javanese <br>
+                                                    <div class="container-bar">
+                                                        <div class="bar" style="width:85%">85%</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="map"></div>
+                            </div>
+                        </td>
+                        <td style="width:66%; vertical-align: top;padding-left:10px;">
+                            <div class="box">
+                                <h2 style="text-align: center;padding-top: 10px;">About Me</h2>
+                                <p style="padding-left: 10px;">
+                                    Hi ! My name is Abdil Tegar Arifin. I am a web programmer
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+            </center>
+        </div>
+        <script>
+            function initMap() {
+                // -8.250111, 113.318574
+                const uluru = { lat: -8.250111, lng: 113.318574 };
+                // The map, centered at Uluru
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 4,
+                    center: uluru,
+                });
+                // The marker, positioned at Uluru
+                const marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map,
+                });
+            }
+        </script>
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd9gt3N_RBqH2xRlTX2cvSUKHHwrNOYWw&callback=initMap&libraries=&v=weekly"
+        async
+        ></script>
+    </body>
+</html>
