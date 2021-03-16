@@ -1,321 +1,169 @@
 <html>
     <head>
         <title></title>
-        <!-- <link rel="stylesheet" href="css/style.css"> -->
-        <style>
-            body{
-                /* background-image: linear-gradient(to bottom right, #c997ff, #c997ff, #AC5CFF); */
-                /* background-image: linear-gradient(to bottom right, #dbd9d9, #f5f5f5, #d8d8d8); */
-                /* background-image: linear-gradient(to bottom right, #97b3ff, #97b3ff, #ACb3FF); */
-                background-color: #eee;
-                /* background-color: #eee; */
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                font-family: sans-serif;
-                padding:0px;
-                margin: 0px;
-            }
-            .container{
-                width:100%;
-                padding: 60px 0px;
-            }
-            .box-foto{
-                width: 301px;
-                /* height: 965px; */
-                background-color: #fff;
-                text-align: left;
-                border-radius: 4px;
-                border: solid #f7f7f9;
-                border-width: .2rem 0 0;
-                z-index: 2;
-                float: right;
-                box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
-                /* padding: 40px 0px 40px 40px; */
-            }
-            .nametag{
-                position: relative;
-                z-index: 3;
-                background-color: #fff;
-                box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
-                margin-top: -35px;
-                margin-right: 5px;
-                float: right;
-                padding: 5px 10px;
-            }
-            .box{
-                width: 800px;
-                /* min-height: 300px; */
-                background-color: #fff;
-                color: rgb(26, 26, 26);
-                text-align: left;
-                border-radius: 4px;
-                border: solid #f7f7f9;
-                border-width: .2rem 0 0;
-                z-index: 2;
-                box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
-                /* padding: 40px 0px 40px 40px; */
-            }
-            .list-box{
-                width: 98%;
-                padding: 10px 5px;
-                background-color: #fff;
-                color: rgb(26, 26, 26);
-                text-align: left;
-                border-radius: 4px;
-                border: solid #f7f7f9;
-                border-width: .2rem 0 0;
-                box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
-                font-size: small;
-            }
-            .table-box{
-                width: 100%;
-            }
-            .foto-profil{
-                width: 301px;
-                height: 301px;
-                z-index: 1;
-                border-top-left-radius: 2px;
-                border-top-right-radius: 2px;
-            }
-            .inner-box{
-
-            }
-            hr{
-                border: 0;
-                border-top: 1px solid rgba(0,0,0,.1);
-                box-sizing: content-box;
-                height: 0;
-                overflow: visible;
-            }
-            .icon{
-                width: 20px;
-                height: 20px;
-            }
-            ul{
-                list-style: none;
-                margin-left: -30px;
-            }
-            li{
-                padding: 7px 10px;
-            }
-            .table-list-contain tbody tr td {
-                padding: 8px 8px;
-            }
-            #map {
-                height: 250px;
-                /* The height is 400 pixels */
-                width: 100%;
-                border-bottom-left-radius: 3px;
-                border-bottom-right-radius: 3px;
-                /* The width is the width of the web page */
-            }
-            .container-bar{
-                width: 100%;
-                height: 20px;
-                border-radius: 8px;
-                background-color: #efefef;
-                border: 1px solid rgba(0, 0, 0, 0.1);
-                margin:4px 0px;
-            }
-            .bar{
-                height: 21px;
-                border-radius: 8px;
-                background-image: linear-gradient(to bottom right, #97b3ff, #97b3ff, #5cb3ff);
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                text-align: center;
-                color: #fff;
-            }
-            .title{
-                color: #5cb3ff;
-            }
-            .footer{
-                width: 100%;
-                padding: 30px 0px;
-                text-align: center;
-                /* background-image: linear-gradient(to bottom right, #97b3ff, #97b3ff, #5cb3ff); */
-                background-color: #fff;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-            }
-            .tag{
-                font-size: small;
-                background-color: #5cb3ff;
-                padding: 8px;
-                margin: 0px 5px;
-                float: left;
-                color: white;
-                border-radius: 20px;
-            }
-            .tag:hover{
-                background-color: #4ca3ef;
-            }
-            .social_div{
-                float: right;
-            }
-        </style>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="container">
             <center>
-                <table class="table-box">
-                    <tr>
-                        <td style="width:34%; text-align: right;padding-right: 10px; vertical-align: top;">
-                            <div class="box-foto">
+                <div class="contain">
+                    <div class="card-left">
+                        <div class="box-foto">
+                            <div class="bg-foto">
                                 <img src="img/tegar2.jpg" class="foto-profil" alt="">
-                                <span class="nametag">Abdil Tegar Arifin</span>
-                                <div style="padding:10px 10px;">
-                                    <ul>
-                                        <li><img src="svg/home.svg" class="icon"> &nbsp; Jember, East Java, Indonesia</li>
-                                        <li><img src="svg/mail.svg" class="icon"> &nbsp; abdiltegar12@gmail.com</li>
-                                        <li><img src="svg/phone.svg" class="icon"> &nbsp; +62 8132 6711 411</li>
-                                    </ul>
-                                    <hr>
-                                    <table class="table-box table-list-contain">
-                                        <tbody>
-                                            <tr>
-                                                <td width="20px"><img src="svg/globe-alt.svg" class="icon"></td>
-                                                <td valign="center"> Language</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    Bahasa Indonesia <br>
-                                                    <div class="container-bar">
-                                                        <div class="bar" style="width:95%">95%</div>
-                                                    </div>
-                                                    English <br>
-                                                    <div class="container-bar">
-                                                        <div class="bar" style="width:70%">70%</div>
-                                                    </div>
-                                                    Javanese <br>
-                                                    <div class="container-bar">
-                                                        <div class="bar" style="width:85%">85%</div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
                             </div>
-                        </td>
-                        <td style="width:66%; vertical-align: top;padding-left:10px; vertical-align: top;">
-                            <div class="box" style="padding: 0px 10px;">
-                                <h2 style="padding-left: 10px; padding-top: 10px;" class="title">About Me</h2>
-                                <p style="padding-left: 10px;">
-                                    Hi ! My name is Abdil Tegar Arifin. I am a web programmer and a student at Muhammadiyah University of Yogyakarta.
-                                    <br>
-                                    <br>
-                                    <div class="social_div">
-                                        <a href="https://www.facebook.com/abdiltegararifin/" target="blank"><img src="img/045-facebook.png" class="icon"></a>
-                                        <a href="https://www.instagram.com/abdiltegararifin/" target="blank"><img src="img/034-instagram.png" class="icon"></a>
-                                    </div>
-                                    <span style="font-size: small;">Place, Date of Birth : Jember, 12 Feb 1999</span>
-                                </p>
-                                <br>
-                            </div>
-                            <br>
-                            <div class="box" style="padding: 0px 10px;">
-                                <table>
-                                    <tr>
-                                        <td style="vertical-align: top; width: 100px;padding-top: 10px;">
-                                            <h3 class="title">Skills</h3>
-                                        </td>
-                                        <td>
-                                            <div class="tag">
-                                                HTML
-                                            </div>
-                                            <div class="tag">
-                                                CSS
-                                            </div>
-                                            <div class="tag">
-                                                PHP
-                                            </div>
-                                            <div class="tag">
-                                                ASP.Net C#
-                                            </div>
-                                            <div class="tag">
-                                                SQL
-                                            </div>
-                                            <div class="tag">
-                                                MySQL
-                                            </div>
-                                        </td>
-                                    </tr>
+                            <span class="nametag">Abdil Tegar Arifin</span>
+                            <div style="padding:10px 10px;">
+                                <ul>
+                                    <li><img src="svg/home.svg" class="icon"> &nbsp; Jember, East Java, Indonesia</li>
+                                    <li><img src="svg/mail.svg" class="icon"> &nbsp; abdiltegar12@gmail.com</li>
+                                    <li><img src="svg/phone.svg" class="icon"> &nbsp; +62 8132 6711 411</li>
+                                </ul>
+                                <hr>
+                                <table class="table-box table-list-contain">
+                                    <tbody>
+                                        <tr>
+                                            <td width="20px"><img src="svg/globe-alt.svg" class="icon"></td>
+                                            <td valign="center"> Language</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                Bahasa Indonesia <br>
+                                                <div class="container-bar">
+                                                    <div class="bar" style="width:95%">95%</div>
+                                                </div>
+                                                English <br>
+                                                <div class="container-bar">
+                                                    <div class="bar" style="width:70%">70%</div>
+                                                </div>
+                                                Javanese <br>
+                                                <div class="container-bar">
+                                                    <div class="bar" style="width:85%">85%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </div>
-                            <br>
-                            <div class="box" style="padding: 0px 10px;">
-                                <h3 class="title">Education</h3>
-                                <div style="padding-left: 10px;">
-                                    <div class="list-box">
-                                        <b>Muhammadiyah University of Yogyakarta</b>
-                                        <div class="social_div">
-                                            <span style="font-size: x-small;" class="title">Sep 2019 - present</span>
-                                        </div>
-                                        <br>
-                                        Bachelor of Engineering
-                                    </div>
-                                    <br>
-                                    <div class="list-box">
-                                        <b>SMK N 01 Lumajang</b>
-                                        <div class="social_div">
-                                            <span style="font-size: x-small;" class="title">Jul 2014 - Mar 2017</span>
-                                        </div>
-                                        <br>
-                                        Software Engineering
-                                    </div>
-                                    <br>
+                        </div>
+                    </div>
+                    <div class="card-right">
+                        <div class="box" style="padding: 0px 10px;">
+                            <h2 style="padding-left: 10px; padding-top: 10px;" class="title">About Me</h2>
+                            <p style="padding-left: 10px;">
+                                Hi ! My name is Abdil Tegar Arifin. I am a web programmer and a student at Muhammadiyah University of Yogyakarta.
+                                <br>
+                                <br>
+                                <div class="social_div">
+                                    <a href="https://www.facebook.com/abdiltegararifin/" target="blank"><img src="img/045-facebook.png" class="icon"></a>
+                                    <a href="https://www.instagram.com/abdiltegararifin/" target="blank"><img src="img/034-instagram.png" class="icon"></a>
                                 </div>
-                            </div>
+                                <span style="font-size: small;">Place, Date of Birth : Jember, 12 Feb 1999</span>
+                            </p>
                             <br>
-                            <div class="box" style="padding: 0px 10px;">
-                                <h3 class="title">Job Experiences</h3>
-                                <div style="padding-left: 10px;">
-                                    <div class="list-box">
-                                        <b>UMY Techno Creative</b>
-                                        <div class="social_div">
-                                            <span style="font-size: x-small;" class="title">5 Jun 2017 - present</span>
+                        </div>
+                        <br>
+                        <div class="box" style="padding: 0px 10px;">
+                            <table>
+                                <tr>
+                                    <td style="vertical-align: top; width: 100px;padding-top: 10px;">
+                                        <h3 class="title">Skills</h3>
+                                    </td>
+                                    <td>
+                                        <div class="tag">
+                                            HTML
                                         </div>
-                                        <br>
-                                        Web Programmer
+                                        <div class="tag">
+                                            CSS
+                                        </div>
+                                        <div class="tag">
+                                            PHP
+                                        </div>
+                                        <div class="tag">
+                                            ASP.Net C#
+                                        </div>
+                                        <div class="tag">
+                                            SQL
+                                        </div>
+                                        <div class="tag">
+                                            MySQL
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br>
+                        <div class="box" style="padding: 0px 10px;">
+                            <h3 class="title">Education</h3>
+                            <div style="padding-left: 10px;">
+                                <div class="list-box">
+                                    <b>Muhammadiyah University of Yogyakarta</b>
+                                    <div class="social_div">
+                                        <span style="font-size: x-small;" class="title">Sep 2019 - present</span>
                                     </div>
                                     <br>
-                                    <div class="list-box">
-                                        <b>freelancer.co.id</b>
-                                        <div class="social_div">
-                                            <span style="font-size: x-small;" class="title">19 Jan 2017 - present</span>
-                                        </div>
-                                        <br>
-                                        Freelance Programmer
-                                    </div>
-                                    <br>
+                                    Bachelor of Engineering
                                 </div>
-                            </div>
-                            <br>
-                            <div class="box" style="padding: 0px 10px;">
-                                <h3 class="title">Motivations and Interest</h3>
-                                <div style="padding-left: 10px;">
-                                    I love learning technologies especially about programming. I interested in web applications since in highschool. I want to have a degree in IT.
+                                <br>
+                                <div class="list-box">
+                                    <b>SMK N 01 Lumajang</b>
+                                    <div class="social_div">
+                                        <span style="font-size: x-small;" class="title">Jul 2014 - Mar 2017</span>
+                                    </div>
                                     <br>
+                                    Software Engineering
                                 </div>
                                 <br>
                             </div>
-                            <br>
-                            <div class="box" style="padding: 0px 10px;">
-                                <h3 class="title">Certificates and Awards</h3>
-                                <div style="padding-left: 10px;">
-                                    <ul style="list-style: disc;font-size: small;">
-                                        <li>9 Jul 2020 - Certificate of Completion - Java Virtual Bootcamp - by Inixindojogja.</li>
-                                        <li>19 Jun 2017 - Certificate of Competence - Junior Programming - by BSNP LSP.</li>
-                                        <li>4 Mar 2017 - Certificate of Competency - Software Engineering - by Nusantara Tama.</li>
-                                        <li>10 Sep 2016 - 1st place in Student Competency Competition  - Web Design - by Lumajang Government.</li>
-                                        <li>28 Jan 2016 - Certificate of Completion - Laravel Programming - by LPTSI Surabaya Institute of Technology.</li>
-                                    </ul>
+                        </div>
+                        <br>
+                        <div class="box" style="padding: 0px 10px;">
+                            <h3 class="title">Job Experiences</h3>
+                            <div style="padding-left: 10px;">
+                                <div class="list-box">
+                                    <b>UMY Techno Creative</b>
+                                    <div class="social_div">
+                                        <span style="font-size: x-small;" class="title">5 Jun 2017 - present</span>
+                                    </div>
+                                    <br>
+                                    Web Programmer
                                 </div>
+                                <br>
+                                <div class="list-box">
+                                    <b>freelancer.co.id</b>
+                                    <div class="social_div">
+                                        <span style="font-size: x-small;" class="title">19 Jan 2017 - present</span>
+                                    </div>
+                                    <br>
+                                    Freelance Programmer
+                                </div>
+                                <br>
                             </div>
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                        <br>
+                        <div class="box" style="padding: 0px 10px;">
+                            <h3 class="title">Motivations and Interest</h3>
+                            <div style="padding-left: 10px;">
+                                I love learning technologies especially about programming. I interested in web applications since in highschool. I want to have a degree in IT.
+                                <br>
+                            </div>
+                            <br>
+                        </div>
+                        <br>
+                        <div class="box" style="padding: 0px 10px;">
+                            <h3 class="title">Certificates and Awards</h3>
+                            <div style="padding-left: 10px;">
+                                <ul style="list-style: disc;font-size: small;">
+                                    <li>9 Jul 2020 - Certificate of Completion - Java Virtual Bootcamp - by Inixindojogja.</li>
+                                    <li>19 Jun 2017 - Certificate of Competence - Junior Programming - by BSNP LSP.</li>
+                                    <li>4 Mar 2017 - Certificate of Competency - Software Engineering - by Nusantara Tama.</li>
+                                    <li>10 Sep 2016 - 1st place in Student Competency Competition  - Web Design - by Lumajang Government.</li>
+                                    <li>28 Jan 2016 - Certificate of Completion - Laravel Programming - by LPTSI Surabaya Institute of Technology.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </center>
         </div>
         <div class="footer">
