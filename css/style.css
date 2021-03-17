@@ -134,6 +134,12 @@ li{
 .tag:hover{
     background-color: #4ca3ef;
 }
+.tag-img{
+    height: 30px;
+    padding: 8px;
+    margin: 0px 5px;
+    float: left;
+}
 .social_div{
     float: right;
 }
@@ -194,6 +200,7 @@ li{
         border-radius: 100%;
         width: 150px;
         height: 150px;
+        border: 8px solid rgba(0, 0, 0, 0.1);
     }
 }
 
