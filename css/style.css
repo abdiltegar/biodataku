@@ -158,7 +158,7 @@ li{
     height: 1050px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1130px) {
     .container{
         margin-top: 40px;
         height: auto;
